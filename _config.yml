@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: chasetcm
+title: 觅古寻中
 subtitle:
 description:
 author: chasetcm
@@ -72,7 +72,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: jsimple
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
