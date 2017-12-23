@@ -8,24 +8,26 @@
     </div>
     <% } %>
     <div class="post-header">
+       <a class="post-title" href="<%- url_for(post.path) %>" target="<%= external_link %>" title="<%= post.title %>"><%= post.title %></a>
         <div class="post-meta">
             <a href="<%= post.authorLink %>" target="<%= external_link %>">
                 <strong><%= post.author %></strong>
             </a>
-            <em>·</em><%= date(post.date) %>
+            <em></em><%= date(post.date) %>
         </div>
-        <a class="post-title" href="<%- url_for(post.path) %>" target="<%= external_link %>" title="<%= post.title %>"><%= post.title %></a>
         <div class="post-meta">
+            <% if (post.tags.length > 0){  %>
             <a href="/tags" target="<%= external_link %>"><i class="fa fa-tags"></i></a>
             <% post.tags.each((tag)=>{ %>
                 <em>·</em>
                 <a href="<%= tag.permalink %>" target="<%= external_link %>"><%= tag.name %></a>
             <% }) %>
+            <% }%>
         </div>
     </div>
-    <div class="post-desc">
+    <!-- <div class="post-desc">
         <%= post.description || post.title %>
-    </div>
+    </div> -->
 </article>
 
 

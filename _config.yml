@@ -80,4 +80,5 @@ deploy:
   type: git
   repo: https://github.com/chasetcm/chasetcm.github.io.git
   branch: master
-
+  name: chasetcm
+  email: 1449055527@qq.com
